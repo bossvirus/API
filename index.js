@@ -22,7 +22,7 @@ function tiktok(link){
 	return new Promise((resolve, reject) => {
 		let config = {
 			'url': link, 
-			'token': "fd644ebbbb3407f851ed440d42676a3ca07f7a0c41f7661789075fac5909662e" // token này là token của j 
+			'token': "fd644ebbbb3407f851ed440d42676a3ca07f7a0c41f7661789075fac5909662e" 
 		}
 		let headerss = 	{ //đây sao
 			"sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"',
@@ -32,7 +32,7 @@ function tiktok(link){
 		
 	axios('https://ttdownloader.com/req/',{
 			method: 'POST',
-			data: new URLSearchParams(Object.entries(config)), // chả hiểu j
+			data: new URLSearchParams(Object.entries(config)), 
 			headers: headerss
 		})
 	.then(({ data }) => {
